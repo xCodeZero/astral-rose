@@ -1,0 +1,162 @@
+@font-face {
+  font-family: 'Font2';
+  src: url('../public/font/WarhavenB.woff2') format('woff2'),
+      url('../public/font/WarhavenB.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Font2';
+  src: url('../public/font/WarhavenR.woff2') format('woff2'),
+      url('../public/font/WarhavenR.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bahnschrift';
+  src: url('../public/font/Bahnschrift.woff2') format('woff2'),
+      url('../public/font/Bahnschrift.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bahnschrift';
+  src: url('../public/font/Bahnschrift.woff2') format('woff2'),
+      url('../public/font/Bahnschrift.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('../public/font/NotoSans-Bold.eot');
+  src: url('../public/font/NotoSans-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../public/font/NotoSans-Bold.woff2') format('woff2'),
+      url('../public/font/NotoSans-Bold.woff') format('woff'),
+      url('../public/font/NotoSans-Bold.ttf') format('truetype'),
+      url('../public/font/NotoSans-Bold.svg#NotoSans-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('../public/font/NotoSans-Regular.eot');
+  src: url('../public/font/NotoSans-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../public/font/NotoSans-Regular.woff2') format('woff2'),
+      url('../public/font/NotoSans-Regular.woff') format('woff'),
+      url('../public/font/NotoSans-Regular.ttf') format('truetype'),
+      url('../public/font/NotoSans-Regular.svg#NotoSans-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+}
+
+
+:root {
+  --body: 24, 10, 10;
+}
+
+body {
+  font-family: 'Font2';
+  background-color: rgba(var(--body));
+  position: relative;
+
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+}
+
+button {
+  font-family: 'Font2';
+}
+
+input {
+  font-family: 'Font2';
+}
+
+
+.container {
+  width: 75%;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+// Font Base
+
+
+html {
+  font-size: var(--base-font-size);
+}
+
+@media (max-width: 480px) {
+  :root {
+      --base-font-size: 16px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  :root {
+      --base-font-size: 16px;
+  }
+
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  :root {
+      --base-font-size: 16px;
+  }
+}
+
+
+@media (min-width: 1025px) and (max-width: 1365px) {
+  :root {
+      --base-font-size: 16px;
+  }
+}
+
+
+@media (min-width: 1366px) and (max-width: 1920px) {
+  :root {
+      --base-font-size: 1.4vw;
+  }
+}
+
+
+@media (min-width: 1921px) {
+  :root {
+      --base-font-size: 1.4vw;
+  }
+}
